@@ -1,5 +1,10 @@
 <ul class="linkList">
   <li *ngFor="let link of links">
-    <a [href]="link.url" target="_blank">{{ link.title }}</a>
-  </li>
+    <a
+      [href]="link.url"
+      target="_blank"
+      [ngClass]="{ 'attention': animar }">
+      {{ link.title }}
+    </a>
+    </li>
 </ul>

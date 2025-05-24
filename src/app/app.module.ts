@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { LinksComponent } from './components/links/links.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CurriculoPdfComponent } from './components/curriculo-pdf/curriculo-pdf.component';
+import { SocialLinksComponent } from './components/social-links/social-links.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LinksComponent,
-    CurriculoPdfComponent
+    CurriculoPdfComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule,

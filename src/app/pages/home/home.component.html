@@ -1,18 +1,30 @@
-<div class="wrapper">
-  <main class="content">
-    <div class="userInfo">
-      <img
-        src="https://avatars.githubusercontent.com/u/200390103?v=4"
-        alt="Gabriel Silva"
-      />
-      <h1>Seja bem-vindo, eu sou o Gabriel!</h1>
-      <p>Esse é são os meus links, fique a vontade!</p>
+<div class="container">
+  <main >
+    <div class="mainHeader">
+      <div class="imgAvatar">
+        <img
+          src="https://avatars.githubusercontent.com/u/200390103?v=4"
+          alt="Gabriel Silva"
+        />
+      </div>
+
+        <div class="title">
+          <h1>Gabriel Silva</h1>
+          <h2>@gabriel-gjs</h2>
+        </div>
+
+      <section class="description">
+        <span>Analista de Sistema</span><br>
+        <div class="icons">
+          <i class="devicon-java-plain-wordmark colored icon" alt="Java"></i>
+          <i class="devicon-angularjs-plain colored icon"></i>
+          <i class="devicon-csharp-plain colored icon"></i>
+        </div>
+      </section>
     </div>
     <app-links></app-links>
   </main>
   <footer>
-    <a href="https://github.com/gabriel-gjs" target="_blank"
-      >Desenvolvido por Gabriel Silva</a
-    >
+    <app-social-links></app-social-links>
   </footer>
 </div>

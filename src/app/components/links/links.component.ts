@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinksComponent implements OnInit {
   links: LinksJson = [];
+  animar = false;
 
   constructor(private linksService: LinksService) {}
 
@@ -16,5 +17,11 @@ export class LinksComponent implements OnInit {
     this.linksService.getJsonData().subscribe(data => {
       this.links = data.links;
     });
+
+    this.animar = true;
+
+    setTimeout(() => {
+      this.animar = false;
+    }, 2400);
   }
 }
